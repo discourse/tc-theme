@@ -1,0 +1,10 @@
+{
+  "name": "tc-theme",
+  "version": "0.2.0",
+  "repository": "https://github.com/discourse/tc-theme",
+  "author": "Discourse",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-discourse": "^3.1.0"
+  }
+}
