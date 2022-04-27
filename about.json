@@ -1,7 +1,7 @@
 {
   "name": "TC",
   "component": false,
-  "license_url": "https://github.com/discourse/tc-theme/blob/master/LICENSE",
+  "license_url": "https://github.com/discourse/tc-theme/blob/main/LICENSE",
   "about_url": "https://theme-creator.discourse.org",
   "authors": "Discourse",
   "theme_version": "0.2",

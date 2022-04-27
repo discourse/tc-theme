@@ -3,10 +3,10 @@ import { h } from "virtual-dom";
 import { iconNode } from "discourse-common/lib/icon-library";
 
 export default {
-  name: "skycrafters-nav",
+  name: "theme-creator-header-button",
+
   initialize() {
-    withPluginApi("0.8.7", (api, helper) => {
-      console.log(api);
+    withPluginApi("0.8.7", (api) => {
       let strings = [];
 
       strings["tc_intro"] = {
@@ -20,7 +20,7 @@ export default {
       };
 
       if (api.getCurrentUser()) {
-        api.decorateWidget("header-buttons:before", (helper) => {
+        api.decorateWidget("header-buttons:before", () => {
           return h("button.btn.btn-primary.header-theme-btn", [
             h(
               "a",

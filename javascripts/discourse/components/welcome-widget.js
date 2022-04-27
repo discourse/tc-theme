@@ -7,12 +7,8 @@ export default Component.extend({
   tagName: "",
   router: service(),
 
-  init() {
-    this._super(...arguments);
-  },
-
-  @discourseComputed("router.currentRouteName", "router.currentURL")
-  shouldDisplay(currentRouteName, currentURL) {
-    return currentRouteName == `discovery.${defaultHomepage()}`;
+  @discourseComputed("router.currentRouteName")
+  shouldDisplay(currentRouteName) {
+    return currentRouteName === `discovery.${defaultHomepage()}`;
   },
 });
