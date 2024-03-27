@@ -1,3 +1,4 @@
+import $ from "jquery";
 import { createWidget } from "discourse/widgets/widget";
 
 const h = require("virtual-dom").h;
